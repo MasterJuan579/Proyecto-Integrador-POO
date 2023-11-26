@@ -4,21 +4,28 @@
 
 class Vacuna{
 
-public:
+private:
     std::string nombre_vacuna;
     int lote;
+    int cantidad;
     std::string vencimiento;
-private:
+public:
     Vacuna();
-    Vacuna( std::string nombre_vacuna, int lote, std::string vencimiento);
+    Vacuna( std::string nombre_vacuna, int lote,int cantidad, std::string vencimiento);
 
     std::string getNombre_vacuna();
     int getLote();
+    int getCantidad();
     std::string getVencimiento();
 
-    void registrar_nueva_vacuna(std::string);
-    void verificar_vencimiento(int);
-    void reportar_efectividad(std::string);
+    void setNombre_Vacuna(std::string);
+    void setLote(int);
+    void setCantidad(int);
+    void setVencimiento(std::string);
+    
+
+    void registrar_nueva_vacuna( std::string nombre_archivo);
+    void reportar_efectividad();
 
 
 };
