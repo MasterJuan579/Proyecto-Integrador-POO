@@ -18,10 +18,7 @@ private:
 
     void registrar_nueva_vacuna(std::string);
     void verificar_vencimiento(int);
-    void reportar_efectividad(std::string)
-
-
-
+    void reportar_efectividad(std::string);
 
 
 };
