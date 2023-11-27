@@ -29,7 +29,7 @@ void Registro_Vacunacion::guardarUsuario() {
     std::cin >> nombre_vacuna;
 
     // Pregunta por el centro de vacunación
-    std::cout << "Seleccione el centro de vacunación (1, 2, 3): ";
+    std::cout << "Seleccione el centro de vacunacion (1, 2, 3): ";
     int opcion_centro;
     std::cin >> opcion_centro;
     switch (opcion_centro) {
@@ -58,11 +58,11 @@ void Registro_Vacunacion::guardarUsuario() {
 }
 
 void Registro_Vacunacion::mostrarInformacion() const {
-    std::cout << "\n-- Información del Registro --\n";
+    std::cout << "\n-- Informacion del Registro --\n";
     std::cout << "1. Fecha de Registro: " << getFecha_registro() << "\n";
     std::cout << "2. Nombre: " << getNombre() << "\n";
     std::cout << "3. Nombre de la Vacuna: " << getNombre_vacuna() << "\n";
-    std::cout << "4. Centro de Vacunación: " << getCentro_vacunacion() << "\n";
+    std::cout << "4. Centro de Vacunacion: " << getCentro_vacunacion() << "\n";
 }
 
 

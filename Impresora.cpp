@@ -11,7 +11,7 @@ void Impresora::registrar_vacunacion() {
     std::cout << "Ingrese el nombre de la vacuna aplicada: ";
     std::cin >> vacuna_aplicada;
 
-    std::cout << "Ingrese la fecha de aplicación (formato AAAAMMDD): ";
+    std::cout << "Ingrese la fecha de aplicacion (formato AAAAMMDD): ";
     std::cin >> fecha_aplicacion;
 
     std::string respuesta;
