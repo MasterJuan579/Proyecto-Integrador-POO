@@ -50,4 +50,3 @@ void Impresora::imprimir_certificado() {
     std::cout << "Vacuna aplicada: " << vacuna_aplicada << "\n";
 }
 
-}
