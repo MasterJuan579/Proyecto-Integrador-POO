@@ -24,7 +24,7 @@ public:
     void setVencimiento(std::string);
     
 
-    void registrar_nueva_vacuna( std::string nombre_archivo);
+    void registrar_nueva_vacuna();
     void reportar_efectividad();
 
 

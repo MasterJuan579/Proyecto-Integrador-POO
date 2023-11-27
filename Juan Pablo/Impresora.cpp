@@ -1,7 +1,33 @@
 #include "Impresora.hpp"
 #include <iostream>
 
-Impresora::Impresora() {
+Impresora::Impresora() : nombre(""), vacuna_aplicada(""), fecha_aplicacion(0) {}
+
+Impresora::Impresora(std::string newNombre, std::string newVacuna, int newFecha)
+    : nombre(newNombre), vacuna_aplicada(newVacuna), fecha_aplicacion(newFecha) {}
+
+std::string Impresora::getNombre() {
+    return nombre;
+}
+
+std::string Impresora::getVacuna_aplicada() {
+    return vacuna_aplicada;
+}
+
+int Impresora::getFecha_aplicacion() {
+    return fecha_aplicacion;
+}
+
+void Impresora::setNombre(std::string newNombre) {
+    nombre = newNombre;
+}
+
+void Impresora::setVacuna_aplicada(std::string newVacuna) {
+    vacuna_aplicada = newVacuna;
+}
+
+void Impresora::setFecha_aplicacion(int newFecha) {
+    fecha_aplicacion = newFecha;
 }
 
 void Impresora::registrar_vacunacion() {
@@ -49,4 +75,3 @@ void Impresora::imprimir_certificado() {
     std::cout << "Fecha de aplicación: " << fecha_aplicacion << "\n";
     std::cout << "Vacuna aplicada: " << vacuna_aplicada << "\n";
 }
-
