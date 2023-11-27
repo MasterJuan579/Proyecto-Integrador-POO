@@ -1,6 +1,5 @@
 #include "Impresora.hpp"
 #include <iostream>
-#include <fstream>
 
 Impresora::Impresora() : vacuna_aplicada(""), fecha_aplicacion(0) {}
 
@@ -16,8 +15,8 @@ void Impresora::registrar_efectos_secundarios() {
     std::cout << "Registrando efectos secundarios..." << std::endl;
 }
 
+// Implementación del método imprimir_certificado
 void Impresora::imprimir_certificado() {
     std::cout << "Vacuna aplicada: " << vacuna_aplicada << std::endl;
     std::cout << "Fecha de aplicación: " << fecha_aplicacion << std::endl;
 }
-
