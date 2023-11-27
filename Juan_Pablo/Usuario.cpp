@@ -50,12 +50,12 @@ void Usuario::registrar_cita() {
 
     if (respuesta == "Sí" || respuesta == "Si" || respuesta == "sí" || respuesta == "si") {
         int dia;
-        std::cout << "Ingrese el día del mes para la cita: ";
+        std::cout << "Ingrese el dia del mes para la cita: ";
         std::cin >> dia;
 
-        std::cout << "Cita registrada para el día " << dia << " del mes.\n";
+        std::cout << "Cita registrada para el dia " << dia << " del mes.\n";
     } else {
-        std::cout << "No se registró ninguna cita.\n";
+        std::cout << "No se registro ninguna cita.\n";
     }
 }
 
@@ -66,11 +66,11 @@ void Usuario::registrar_papeles_oficiales() {
 
     if (respuesta == "Sí" || respuesta == "Si" || respuesta == "sí" || respuesta == "si") {
         int dia;
-        std::cout << "¿En qué día del mes desea la cita para presentar los papeles oficiales? ";
+        std::cout << "¿En qué dia del mes desea la cita para presentar los papeles oficiales? ";
         std::cin >> dia;
 
-        std::cout << "Cita para presentar papeles oficiales registrada para el día " << dia << " del mes.\n";
+        std::cout << "Cita para presentar papeles oficiales registrada para el dia " << dia << " del mes.\n";
     } else {
-        std::cout << "No se registró ninguna cita para presentar papeles oficiales.\n";
+        std::cout << "No se registro ninguna cita para presentar papeles oficiales.\n";
     }
 }

@@ -3,19 +3,26 @@
 #include "Centro_Vacunacion.hpp"
 #include "Vacuna.hpp"
 #include <iostream>
+#include <limits>  // Necesario para limpiar el búfer después de leer enteros
 
 int main() {
     int opcion;
 
     do {
-        std::cout << "\nMenú Principal:\n";
+        std::cout << "\nMenu Principal:\n";
         std::cout << "1. Registrar Usuario\n";
         std::cout << "2. Registrar Impresora\n";
-        std::cout << "3. Registrar Centro de Vacunación\n";
+        std::cout << "3. Registrar Centro de Vacunacion\n";
         std::cout << "4. Registrar Nueva Vacuna\n";
         std::cout << "5. Salir\n";
         std::cout << "Elija una opción: ";
-        std::cin >> opcion;
+
+        if (!(std::cin >> opcion)) {
+            std::cin.clear();  // Limpiar el estado de error
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // Limpiar el búfer
+            std::cout << "Entrada no válida. Intente de nuevo.\n";
+            continue;
+        }
 
         switch (opcion) {
             case 1: {

@@ -7,12 +7,12 @@ int main() {
     int opcion;
 
     do {
-        std::cout << "\nMenú Principal:\n";
+        std::cout << "\nMenu Principal:\n";
         std::cout << "1. Registrar Usuario\n";
         std::cout << "2. Registrar Impresora\n";
         std::cout << "3. Registrar Centro de Vacunación\n";
         std::cout << "4. Salir\n";
-        std::cout << "Elija una opción: ";
+        std::cout << "Elija una opcion: ";
         std::cin >> opcion;
 
         switch (opcion) {

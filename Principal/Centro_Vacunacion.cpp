@@ -47,7 +47,7 @@ void CentroVacunacion::registrarCentroVacunacion() {
     std::ofstream archivo("CentrosVacunacion.csv", std::ios::app);
     if (archivo.is_open()) {
         archivo << nombre << "," << ubicacion << "," << capacidad << "\n";
-        std::cout << "Centro de vacunación registrado correctamente.\n";
+        std::cout << "Centro de vacunacion registrado correctamente.\n";
         archivo.close();
     } else {
         std::cerr << "Error al abrir el archivo CentrosVacunacion.csv\n";

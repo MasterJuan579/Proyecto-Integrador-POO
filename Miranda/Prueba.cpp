@@ -3,19 +3,26 @@
 #include "Centro_Vacunacion.hpp"
 #include "Registro_Vacunacion.hpp"
 #include <iostream>
+#include <limits>
 
 int main() {
     int opcion;
 
     do {
-        std::cout << "\nMenú Principal:\n";
+        std::cout << "\nMenu Principal:\n";
         std::cout << "1. Registrar Usuario\n";
         std::cout << "2. Registrar Impresora\n";
         std::cout << "3. Registrar Centro de Vacunación\n";
         std::cout << "4. Registrar Vacunación\n";
         std::cout << "5. Salir\n";
-        std::cout << "Elija una opción: ";
-        std::cin >> opcion;
+        std::cout << "Elija una opcion: ";
+
+        if (!(std::cin >> opcion)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Entrada no valida. Intente de nuevo.\n";
+            continue;
+        }
 
         switch (opcion) {
             case 1: {
@@ -48,7 +55,7 @@ int main() {
                 std::cout << "Saliendo del programa. ¡Hasta luego!\n";
                 break;
             default:
-                std::cout << "Opción no válida. Intente de nuevo.\n";
+                std::cout << "Opcion no válida. Intente de nuevo.\n";
         }
 
     } while (opcion != 5);
